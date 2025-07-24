@@ -8,7 +8,7 @@ authRouter.post("/login", loginUser);
 
 // Test endpoint
 authRouter.post("/test", async(req, res)=>{
-    console.log("test working");
+    console.log("logging to check workflow.");
     res.status(201);
 })
 
