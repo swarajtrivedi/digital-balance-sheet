@@ -9,7 +9,7 @@ authRouter.post("/logout", logoutUser);
 
 // Test endpoint
 authRouter.post("/test", async(req, res)=>{
-    console.log("Checking git automation with Elastic IP.");
+    console.log("Checking automation with Elastic IP.");
     res.status(201);
 })
 
