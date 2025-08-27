@@ -44,3 +44,12 @@ export const loginUser = async (req: Request, res: Response) => {
     res.status(500).json({ message: "Error logging in" });
   }
 };
+
+export const logoutUser = (req: Request, res: Response) =>{
+  res.clearCookie('token', {
+    httpOnly: true,
+    secure: true,
+    sameSite: 'strict',
+  });
+  res.status(200).json({ message: 'Logged out successfully' });
+}
