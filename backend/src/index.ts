@@ -17,8 +17,8 @@ app.use(cors({
   credentials: true
 }));
 app.use(express.json());
-app.use("/api/miop-auth", authRouter);
-app.use("/api/miop-entry", entryRouter);
+app.use("/api/dbs-auth", authRouter);
+app.use("/api/dbs-entry", entryRouter);
 
 const PORT = process.env.PORT || 5000;
 

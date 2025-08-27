@@ -8,7 +8,7 @@ authRouter.post("/login", loginUser);
 
 // Test endpoint
 authRouter.post("/test", async(req, res)=>{
-    console.log("logging to check workflow.");
+    console.log("Checking git automation with Elastic IP.");
     res.status(201);
 })
 

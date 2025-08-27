@@ -25,5 +25,5 @@ jobs:
             git pull origin main
             npm install
             npx tsc
-            pm2 restart miop-backend || pm2 start dist/index.js --name miop-backend
+            pm2 restart dbs-backend || pm2 start dist/index.js --name dbs-backend
           EOF
